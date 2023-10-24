@@ -1,0 +1,55 @@
+*{
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+h1{
+  font-size: 100px;
+}
+
+.App{
+  cursor: none;
+}
+
+p{
+  margin: 20px;
+  margin-top: -50px;
+  margin-bottom: 40px;
+}
+.p{
+  width: 30%;
+  transform: translate(1700px, 0px);
+  transition: all 1s;
+}
+
+.pTransform{
+  transform: translate(800px,0px);
+  transition: all 1s;
+}
+
+.imgNormal{
+  width: 800px;
+  height: 800px;
+  position: relative;
+  right: -600px;
+  animation-name: arrowLarger;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  transition: all 1s;
+}
+
+.imgTransition{
+  animation-name: arrowLarger;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  width: 100px;
+  height: 100px;
+  transition: all 1s;
+  right: -400px;
+}
+
+@keyframes arrowLarger{
+  from{top:0px}
+  to{top: 90px}
+}
